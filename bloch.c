@@ -548,7 +548,7 @@ int dzaflag=0;	/* 1 if dy was allocated. */
 
 int ntime;	/* Number of time points. 	 */
 int ntout;	/* Number of time poitns at output. */
-int outsize[3];	/* Output matrix sizes		*/
+mwSize outsize[3];	/* Output matrix sizes		*/
 
 int ngrad;	/* Number of gradient dimensions */
 int nf;
