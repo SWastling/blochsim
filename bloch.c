@@ -6,7 +6,6 @@
 #define GAMMA   26753.0
 #define TWOPI	6.283185
 
-#define DEBUG
 
 
 
