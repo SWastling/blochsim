@@ -56,10 +56,12 @@ Alternatively to build the MEX function with debug statements:
 mex -output bloch_debug CFLAGS='$CFLAGS -DDEBUG' bloch.c
 ```
 
-## Demonstration
+## Demonstrations
+
+### Effect of Hamming Windowed Sinc Shaped RF Pulse on Magnetisation
 The simulator can be used to model the effect of a hamming-windowed sinc-shaped 
-RF pulse and square-shaped gradient waveform on the initial magnetisation as 
-shown in the [MATLAB demo](./demo.m) and described below:
+RF pulse and square-shaped gradient waveform on the magnetisation as 
+shown in the [MATLAB demo](./sinc_demo/sinc_demo.m) and described below:
 
 1. Define the gyromagnetic ratio:
     ```matlab
@@ -134,7 +136,7 @@ shown in the [MATLAB demo](./demo.m) and described below:
     ylabel('Gradient (G/cm)'); 
    ```
    
-   ![](demo_rf_pulse.png)
+   ![](./sinc_demo/sinc_demo_rf_pulse.png)
    
 7. Simulate the slice profile immediately after the RF pulse and gradient:
     ```matlab
@@ -159,7 +161,7 @@ shown in the [MATLAB demo](./demo.m) and described below:
     ylabel('Phase M_{xy} (rad)');
     ```
 
-   ![](demo_slice_profile.png)
+   ![](./sinc_demo/sinc_demo_slice_profile.png)
 
 8. Simulate the magnetisation over time:
     ```matlab
@@ -182,7 +184,7 @@ shown in the [MATLAB demo](./demo.m) and described below:
     xlabel('Time (ms)');
     ylabel('M_z');
     ```
-   ![](demo_time_course.png)
+   ![](./sinc_demo/sinc_demo_time_course.png)
    
 9. Simulate the the slice profile over a range of off-resonance frequencies:
     ```matlab
@@ -205,7 +207,20 @@ shown in the [MATLAB demo](./demo.m) and described below:
     title('|M_{xy}|');
     ```
    
-      ![](demo_off_resonance.png)
+      ![](./sinc_demo/sinc_demo_off_resonance.png)
+
+### Effect of Spectral-Spatial RF Pulse on Magnetisation
+The simulator can be used to model the effect of a spectral-spatial RF pulse 
+and square-shaped gradient waveform on the magnetisation as 
+shown in the [MATLAB demo](./spsp_demo/spsp_demo.m).
+
+RF pulse and gradient waveform:
+
+![](./spsp_demo/spsp_demo_rf_gradient.png)
+
+Magnetisation as a function of spatial position and offset frequency:
+
+![](./spsp_demo/spsp_demo_magnetisation.png)
 
 ## License
 The c-code was originally shared by [Professor Brian A. Hargreaves](mailto:bah@stanford.edu) 
