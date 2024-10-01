@@ -3,7 +3,7 @@
 ## Synopsis
 A Bloch equation simulator, written by 
 [Professor Brian A. Hargreaves](mailto:bah@stanford.edu) in 2003, that runs in 
-[MATLAB](www.mathworks.com). For speed it is written in C as a MEX function. 
+[MATLAB](https://www.mathworks.com). For speed it is written in C as a MEX function. 
 Previously freely shared on his, now unavailable, webpage 
 http://www-mrsrl.stanford.edu/~brian/blochsim.
 
@@ -230,5 +230,5 @@ This modified version is shared under an [MIT license](./LICENSE).
 
 ## Authors and Acknowledgements
 Written by [Professor Brian A. Hargreaves](mailto:bah@stanford.edu). Modified 
-to build in [MATLAB](www.mathworks.com) R2022a by 
+to build in [MATLAB](https://www.mathworks.com) R2022a by 
 [Dr Stephen Wastling](mailto:stephen.wastling@nhs.net).
