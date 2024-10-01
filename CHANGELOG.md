@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [release-1.0.2](https://github.com/SWastling/blochsim/tree/release-1.0.2) - 2024-10-01
+
+### Changed
+- Updated date in  LICENSE
+- Fixed broken weblinks in README.md
+
 ## [release-1.0.1](https://github.com/SWastling/blochsim/tree/release-1.0.1) - 2022-11-18
 
 ### Added
